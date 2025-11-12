@@ -16,6 +16,7 @@ This project visualizes Bigfoot sighting reports across the United States betwee
 Data source: [BFRO Reports Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)
 
 We can use a VegaChart HTML tag like so:
+
 ```
 <vegachart schema-url="{{ site.baseurl }}/chart1.json" style="width: 100%"></vegachart>
 ```
@@ -24,6 +25,7 @@ We can use a VegaChart HTML tag like so:
 
 This map shows where and when Bigfoot sightings were reported between 1950 and 2020.  
 Use the slider to filter sightings by year.
+
 ```
 <vegachart schema-url="{{ site.baseurl }}/chart2.json" style="width: 100%"></vegachart>
 ```
