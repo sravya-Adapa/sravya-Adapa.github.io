@@ -15,11 +15,10 @@ custom_js:
 This project visualizes Bigfoot sighting reports across the United States between 1950 and 2020.  
 Data source: [BFRO Reports Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)
 
-<div style="text-align:center;">
-  <vegachart schema-url="{{ site.baseurl }}/chart1.json" style="max-width: 90%; margin:auto; display:block;"></vegachart>
-</div>
+<center>
+  <vegachart schema-url="{{ site.baseurl }}/chart1.json" style="width:80%; max-width:850px;"></vegachart>
+</center>
 
----
 
 ## Interactive Map by Year
 
@@ -27,8 +26,6 @@ This map shows where and when Bigfoot sightings were reported between 1950 and 2
 Use the slider to filter sightings by year.
 
 <vegachart schema-url="{{ site.baseurl }}/chart2.json" style="width: 100%"></vegachart>
-
----
 
 ## Search The Data & Methods
 
