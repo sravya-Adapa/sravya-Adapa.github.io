@@ -12,7 +12,7 @@ links:
     url: "https://github.com/sravya-Adapa/sravya-Adapa.github.io/blob/main/bigfoot_visualizations.ipynb"
 ---
 
-##  Visualization 1: Sightings by State
+## Visualization 1: Sightings by State
 This bar chart visualizes the number of Bigfoot sightings across U.S. states. The x-axis represents states, and the y-axis shows how many sightings were reported in each.  
 I used a **bar mark** with a **color encoding** (`reds` color scheme) to emphasize states with more sightings.
 
@@ -20,7 +20,7 @@ I used a **bar mark** with a **color encoding** (`reds` color scheme) to emphasi
 
 ---
 
-##  Visualization 2: Interactive Map by Year
+## Visualization 2: Interactive Map by Year
 This interactive map shows where Bigfoot sightings occurred between 1950 and 2020.  
 Each circle represents a sighting by **latitude** and **longitude**, and color encodes the **year**.  
 The map uses an **Albers USA projection**, and includes a **year slider** that allows viewers to explore sightings over time.
@@ -29,5 +29,5 @@ The map uses an **Albers USA projection**, and includes a **year slider** that a
 
 ---
 
-###  Interactivity Discussion
+### Interactivity Discussion
 The slider allows users to explore temporal patterns of sightings. This interaction makes the visualization more engaging and highlights trends that are not visible in static charts.
