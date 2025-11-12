@@ -1,33 +1,41 @@
 ---
-layout: project
-title: "Bigfoot Sightings Visualization"
-subtitle: "Interactive Altair Visualizations of Bigfoot Reports in the U.S."
-date: 2025-11-12
-tags: [Python, Altair, Vega-Lite, Data Visualization]
-thumbnail: ../chart1.html
-links:
-  - label: "View Dataset"
-    url: "https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv"
-  - label: "View Notebook"
-    url: "https://github.com/sravya-Adapa/sravya-Adapa.github.io/blob/main/bigfoot_visualizations.ipynb"
+name: Bigfoot Sightings Visualization
+tools: [Python, Altair, Vega-Lite]
+image: assets/pngs/bigfoot_thumb.png
+description: Interactive visualizations of Bigfoot sighting reports across the U.S. using Altair & Vega-Lite.
+custom_js:
+  - vega.min
+  - vega-lite.min
+  - vega-embed.min
+  - justcharts
 ---
 
-## Visualization 1: Sightings by State
-This bar chart visualizes the number of Bigfoot sightings across U.S. states. The x-axis represents states, and the y-axis shows how many sightings were reported in each.  
-I used a **bar mark** with a **color encoding** (`reds` color scheme) to emphasize states with more sightings.
+# Bigfoot Sightings Visualization
 
-<iframe src="../chart1.html" width="850" height="500"></iframe>
+This project visualizes Bigfoot sighting reports across the United States between 1950 and 2020.  
+Data source: [BFRO Reports Dataset](https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv)
 
----
+We can use a VegaChart HTML tag like so:
 
-## Visualization 2: Interactive Map by Year
-This interactive map shows where Bigfoot sightings occurred between 1950 and 2020.  
-Each circle represents a sighting by **latitude** and **longitude**, and color encodes the **year**.  
-The map uses an **Albers USA projection**, and includes a **year slider** that allows viewers to explore sightings over time.
-
-<iframe src="../chart2.html" width="850" height="500"></iframe>
+<vegachart schema-url="{{ site.baseurl }}/chart1.json" style="width: 100%"></vegachart>
 
 ---
 
-### Interactivity Discussion
-The slider allows users to explore temporal patterns of sightings. This interaction makes the visualization more engaging and highlights trends that are not visible in static charts.
+## Interactive Map by Year
+
+This map shows where and when Bigfoot sightings were reported between 1950 and 2020.  
+Use the slider to filter sightings by year.
+
+<vegachart schema-url="{{ site.baseurl }}/chart2.json" style="width: 100%"></vegachart>
+
+---
+
+## Search The Data & Methods
+
+<div class="left">
+{% include elements/button.html link="https://raw.githubusercontent.com/UIUC-iSchool-DataViz/is445_data/main/bfro_reports_fall2022.csv" text="The Data" %}
+</div>
+
+<div class="right">
+{% include elements/button.html link="https://github.com/sravya-Adapa/sravya-Adapa.github.io/blob/main/bigfoot_visualizations.ipynb" text="The Notebook" %}
+</div>
