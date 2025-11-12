@@ -17,6 +17,7 @@ Data source: [BFRO Reports Dataset](https://raw.githubusercontent.com/UIUC-iScho
 
 <vegachart schema-url="{{ site.baseurl }}/chart1.json" style="width: 100%"></vegachart>
 
+---
 
 ## Interactive Map by Year
 
@@ -24,6 +25,8 @@ This map shows where and when Bigfoot sightings were reported between 1950 and 2
 Use the slider to filter sightings by year.
 
 <vegachart schema-url="{{ site.baseurl }}/chart2.json" style="width: 100%"></vegachart>
+
+---
 
 ## Search The Data & Methods
 
